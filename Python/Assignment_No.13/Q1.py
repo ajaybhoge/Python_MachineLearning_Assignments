@@ -1,27 +1,17 @@
 
-def PrimeNumber(No):
+def RectangleArea(Length, Width):
 
-    IsPrime = True
+    Area = Length * Width
 
-    for i in range(2, No-1):
-
-        if(No % i == 0):
-
-            IsPrime = False
-
-    if(IsPrime):
-
-        print("Prime Number")
-
-    else:
-
-        print("Not Prime Number")
+    print(Area)
 
 def main():
 
-    iValue = int(input("Enter Number :"))
+    iLength = float(input("Enter Length :"))
 
-    PrimeNumber(iValue)
+    iWidth = float(input("Enter Width :"))
+
+    RectangleArea(iLength, iWidth)
 
 if __name__ == "__main__":
 

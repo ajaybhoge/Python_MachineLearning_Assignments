@@ -1,27 +1,21 @@
 
-def PrimeNumber(No):
+def VowelCheck(Ch):
 
-    IsPrime = True
+    Ch = Ch.lower()
 
-    for i in range(2, No-1):
+    if(Ch == 'a' or Ch == 'e' or Ch == 'i' or Ch == 'o' or Ch == 'u'):
 
-        if(No % i == 0):
-
-            IsPrime = False
-
-    if(IsPrime):
-
-        print("Prime Number")
+        print("Vowel")
 
     else:
 
-        print("Not Prime Number")
+        print("Consonant")
 
 def main():
 
-    iValue = int(input("Enter Number :"))
+    cValue = input("Enter Character :")
 
-    PrimeNumber(iValue)
+    VowelCheck(cValue)
 
 if __name__ == "__main__":
 
